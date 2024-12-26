@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attack on Titan</title>
+  <style>
+    /* Reset default margins and paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body */
+    body {
+      background-color: #1a1a1a; /* Dark background */
+      color: white; /* White text for contrast */
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      padding: 40px;
+      text-align: center;
+      animation: colorShift 3s infinite alternate; /* Animation for color change */
+      position: relative;
+      transition: transform 0.5s ease-in-out; /* Transform transition */
+    }
+
+    h1 {
+      color: #d32f2f; /* Initial red color */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      font-size: 48px;
+      animation: slideIn 2s ease-in-out;
+    }
+
+    h1:hover {
+      color: #ff1744; /* Hover effect for title */
+    }
+
+    p {
+      color: #ccc;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    /* Header color animation */
+    @keyframes colorShift {
+      0% {
+        background-color: #d32f2f; /* Red */
+        color: black; /* Black text on red */
+      }
+      100% {
+        background-color: #121212; /* Black */
+        color: #d32f2f; /* Red text on black */
+      }
+    }
+
+    /* Header sliding animation */
+    @keyframes slideIn {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Navigation */
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav a {
+      color: #f44336; /* Red links */
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #ff1744; /* Brighter red on hover */
+    }
+
+    /* About Section */
+    section#about {
+      margin: 40px 0;
+      padding: 40px;
+      background-color: #2c2c2c; /* Slightly lighter background for sections */
+      border-radius: 8px;
+    }
+
+    section#about h2 {
+      color: #d32f2f; /* Red heading */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
+
+    section#about p {
+      font-size: 18px;
+      color: #cccccc; /* Light gray text */
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    /* Character Image in About Section */
+    .about-images {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .about-images img {
+      width: 35%; /* Smaller image size */
+      border-radius: 8px;
+      border: 3px solid #d32f2f;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .about-images img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Sections */
+    section {
+      margin: 40px 0;
+      padding: 20px;
+      background-color: #2c2c2c; /* Slightly lighter background for sections */
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #d32f2f; /* Red headings */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #cccccc; /* Light gray text */
+    }
+
+    /* Character Profiles */
+    .character-profile {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .character-profile img {
+      width: 150px;
+      height: 150px;
+      border: 3px solid #d32f2f; /* Red border around images */
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+
+    .character-profile h3 {
+      color: #d32f2f;
+    }
+
+    .character-profile p {
+      color: #cccccc;
+      font-size: 16px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #121212; /* Dark footer */
+      color: #888888; /* Lighter text for footer */
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #f44336;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header id="header">
+    <h1>Attack on Titan</h1>
+    <p>Explore the world of *Attack on Titan* and its epic story!</p>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#characters">Characters</a>
+    <a href="#episodes">Episodes</a>
+    <a href="#gallery">Gallery</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Attack on Titan</h2>
+    <p>*Attack on Titan* is a Japanese anime series based on the manga by Hajime Isayama. Set in a world where humanity is on the brink of extinction due to giant humanoid creatures known as Titans, the series follows the story of Eren Yeager and his friends as they join the military to fight these monsters and uncover the mysteries of their world.</p>
+    <p>As they uncover the truth behind the Titans, they face betrayal, loss, and a constant struggle for survival. The anime explores themes of freedom, sacrifice, and the human desire for power. Its gripping story and complex characters have captivated audiences worldwide. The shocking plot twists and emotional depth have made it one of the most influential anime of all time.</p>
+    <p>Throughout the series, the characters evolve as they face insurmountable challenges. The world-building and intense action sequences make *Attack on Titan* a unique experience. The series is not only about humanity's battle for survival but also about exploring moral questions and the consequences of war.</p>
+    <div class="about-images">
+      <img src="https://th.bing.com/th/id/OIP.Cd_Ady9rmlqgKC_BL9tr8wHaF7?rs=1&pid=ImgDetMain" alt="Eren Yeager">
+      <img src="https://th.bing.com/th/id/OIP.tdid_5f0MkBAeIApd11RXwHaHa?w=500&h=500&rs=1&pid=ImgDetMain" alt="Titan Battle">
+    </div>
+  </section>
+
+  <!-- Characters Section -->
+  <section id="characters">
+    <h2>Main Characters</h2>
+
+    <div class="character-profile">
+      <img src="https://i.pinimg.com/originals/08/b8/ef/08b8ef49bb69e9fe62a5e6f537f7f611.jpg" alt="Eren Yeager">
+      <div>
+        <h3>Eren Yeager</h3>
+        <p>The main protagonist, Eren is driven by a strong desire for freedom and vengeance against the Titans who destroyed his hometown. As the story progresses, Eren’s character becomes more complex, raising questions about his true motives and the cost of his determination.</p>
+      </div>
+    </div>
+
+    <div class="character-profile">
+      <img src="https://th.bing.com/th/id/R.56067bfc1d578af5112ab1d910b37bd4?rik=rbWovCvJDQuBGw&pid=ImgRaw&r=0" alt="Mikasa Ackerman">
+      <div>
+        <h3>Mikasa Ackerman</h3>
+        <p>One of Eren's adoptive sisters and a highly skilled soldier, Mikasa is known for her loyalty and combat prowess. She is fiercely protective of Eren and plays a crucial role in many of the series' intense battles. Her stoic nature hides deep emotional turmoil.</p>
+      </div>
+    </div>
+
+    <div class="character-profile">
+      <img src="https://th.bing.com/th/id/R.5f78307aa9a98c4f874e5eb7873306af?rik=c9SU7MhnDekp8w&pid=ImgRaw&r=0" alt="Armin Arlert">
+      <div>
+        <h3>Armin Arlert</h3>
+        <p>Armin is Eren’s childhood friend, known for his intelligence and strategic thinking. While he may not be physically strong, Armin’s quick thinking and courage have saved his friends on multiple occasions. His evolution into a more confident leader is one of the most satisfying character arcs in the series.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Episodes Section -->
+  <section id="episodes">
+    <h2>Episodes</h2>
+    <p>Here is a list of episodes from *Attack on Titan* (Season 1):</p>
+    <ul>
+      <li>Episode 1: To You, in 2000 Years: The Fall of Shiganshina, Part 1</li>
+      <li>Episode 2: That Day: The Fall of Shiganshina, Part 2</li>
+      <li>Episode 3: A Dim Light Amid Despair: Humanity’s Comeback, Part 1</li>
+      <!-- Add more episodes as needed -->
+    </ul>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <center><p>Check out some of the best fan art and official images from *Attack on Titan*:</p>
+    <div>
+      <img src="https://th.bing.com/th/id/R.8aeb4e6e1dd4bbe94300f54a6377182f?rik=TN%2bxY9gy2SaOAA&pid=ImgRaw&r=0" alt="Eren Titan Form" width="300">
+      <img src="https://attackofthefanboy.com/wp-content/uploads/2023/02/Mikasa.jpg" alt="Mikasa Fighting Titans" width="300">
+    </div></center>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Attack on Titan Fan Page. All rights reserved.</p>
+    <p>by yassi lao or yasssin laouid</p>
+  </footer>
+
+</body>
+</html>
